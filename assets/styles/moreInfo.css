@@ -1,0 +1,9 @@
+.textBlck {
+  font-size: 2rem;
+  color: var(--darkBlue);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}

@@ -1,0 +1,13 @@
+.contactUsTxtBlck {
+  color: var(--darkBlue);
+  font-size: 2rem;
+  text-align: center;
+}
+
+.contactOption {
+  display: block;
+  color: var(--darkBlue);
+  font-size: 2rem;
+  margin-top: 5rem;
+  text-align: center;
+}

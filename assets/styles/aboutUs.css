@@ -1,0 +1,20 @@
+.aboutUsDis {
+  font-size: 2rem;
+  color: var(--darkBlue);
+  text-align: center;
+  margin-left: 2rem;
+  padding-right: 2rem;
+  display: block;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.mailingListLink {
+  color: var(--darkBlue);
+}
+
+/* .featureList {
+  margin-left: auto;
+  margin-right: auto;
+  
+} */

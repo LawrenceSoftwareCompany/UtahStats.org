@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/assets/imgs/WebLogo_1.png" />
+    <link rel="stylesheet" href="/assets/styles/index.css" />
+    <link rel="stylesheet" href="/assets/styles/landing.css" />
+    <title>Home</title>
+  </head>
+  <body>
+    <!-- Modal -->
+    <div class="modal" id="modal">
+      <nav class="mainNav">
+        <div class="navItem superFastSlide">
+          <a href="/index.html " class="navItemLink">Home</a>
+        </div>
+        <div class="navItem fastSlide">
+          <a href="/aboutUs.html" class="navItemLink">About Us</a>
+        </div>
+        <div class="navItem medSlide">
+          <a href="/contactUs.html" class="navItemLink">Contact Us</a>
+        </div>
+        <button class="closeNavBtn slow" onclick="toggleNav()">close</button>
+      </nav>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+      <!-- Site Icon -->
+      <div></div>
+      <div class="headerGridContainer">
+        <h2 class="siteTitle">UtahStats.org</h2>
+      </div>
+      <div class="headerGridContainer">
+        <button class="menuBtn" onclick="toggleNav()">☰</button>
+      </div>
+    </header>
+
+    <!-- Page main content -->
+    <main>
+      <div class="statContainer">
+        <!-- Stat display -->
+        <div id="statgraph">
+          <div class="statMetrics" id="landMarkValues"></div>
+          <div class="statValue" id="statValues">
+            <h3 class="statTitle">Place Holder</h3>
+          </div>
+          <div class="source" id="entityRelatedToStat"></div>
+        </div>
+
+        <!-- dot select -->
+        <div class="dotSelectContainer" id="dotSelectContainer">
+          <div class="selectDot selected" onclick="loadStat(0)"></div>
+          <div class="selectDot" onclick="loadStat(1)"></div>
+          <div class="selectDot" onclick="loadStat(2)"></div>
+        </div>
+      </div>
+
+      <!-- Our surveys section -->
+      <div>
+        <h1 class="sectionTitle">Surveys</h1>
+        <div>
+          <ul class="surveyList" id="surveyList"></ul>
+        </div>
+      </div>
+    </main>
+
+    <!-- Page footer -->
+    <footer class="footer">
+      <nav class="footerNav">
+        <a href="index.html" class="footNavItem">Home</a>
+        <a href="aboutUs.html" class="footNavItem">About Us</a>
+        <a href="contactUs.html" class="footNavItem">Contact Us</a>
+      </nav>
+
+      <span class="creditLink"
+        >Website by:
+        <a href="https://www.lawrencesoftwarecompany.com/" target="_blank"
+          >Lawrence Software Company</a
+        ></span
+      >
+    </footer>
+
+    <script src="/src/index.js"></script>
+    <script src="/src/statvisuals.js"></script>
+    <script src="/src/surveys.js"></script>
+  </body>
+</html>
