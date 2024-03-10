@@ -33,7 +33,7 @@
 }
 
 .statValue {
-  background-image: url(/assets/imgs/WebLogo_1.png);
+  background-image: url(./assets/imgs/WebLogo_1.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 50%;
